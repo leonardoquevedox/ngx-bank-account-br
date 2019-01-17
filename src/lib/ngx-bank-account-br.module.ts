@@ -7,13 +7,13 @@
 import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { FormsModule } from '@angular/forms'
-import { NgxBankAccountComponent } from './ngx-bank-account-br.component'
+import { NgxBankAccountBrComponent } from './ngx-bank-account-br.component'
 
-export const Directive = [NgxBankAccountComponent];
+export const Directive = [NgxBankAccountBrComponent];
 
 @NgModule({
     imports: [CommonModule, FormsModule],
     declarations: [Directive],
     exports: [Directive]
 })
-export class NgxBankAccountModule { }
+export class NgxBankAccountBrModule { }

@@ -5,7 +5,7 @@
  * @description Bank account card component.
  */
 import { NgForm } from '@angular/forms';
-export declare class NgxBankAccountComponent {
+export declare class NgxBankAccountBrComponent {
     account: any;
     form: NgForm;
     banks: {
