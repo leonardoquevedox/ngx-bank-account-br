@@ -1,1 +1,1 @@
-export * from './ngx-bank-account-br.module'
+export * from './lib/ngx-bank-account-br.module'
