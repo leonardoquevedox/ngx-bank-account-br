@@ -26,7 +26,7 @@ import { NgxBankAccountBr } from 'ngx-bank-account-br'
 @NgModule({
   (...)
   imports: [
-    NgxBankAccountBr.forRoot()
+    NgxBankAccountBr
   ]
   (...)
 })
