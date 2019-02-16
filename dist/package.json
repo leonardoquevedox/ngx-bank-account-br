@@ -1,6 +1,6 @@
 {
   "name": "ngx-bank-account-br",
-  "version": "0.9.9",
+  "version": "1.0.0-rc11",
   "description": "Address autocomplete directive for Angular.io (2+).",
   "main": "bundles/ngx-bank-account-br.umd.js",
   "repository": {
@@ -34,7 +34,7 @@
     "@angular/compiler-cli": "^6.0.7",
     "ng-packagr": "^4.7.0",
     "tsickle": "^0.34.0",
-    "typescript": "2.7.2"
+    "typescript": "^2.7.2"
   },
   "module": "fesm5/ngx-bank-account-br.js",
   "es2015": "fesm2015/ngx-bank-account-br.js",
