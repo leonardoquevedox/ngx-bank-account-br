@@ -1,6 +1,6 @@
 {
   "name": "ngx-bank-account-br",
-  "version": "1.0.0-rc20",
+  "version": "1.0.0-rc21",
   "description": "Address autocomplete directive for Angular.io (2+).",
   "main": "index.js",
   "scripts": {
