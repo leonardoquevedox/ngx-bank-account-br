@@ -1,204 +1,177 @@
 $bank-card-color: #1e88e5;
 $secondary-bc-color: adjust-hue($bank-card-color, -5);
 [bank-account-card] {
-  padding-bottom: 2.5rem;
-  max-width: 400px;
-  margin: auto;
-  * {
-    transition-property: all;
-    transition-duration: 0.3s;
-  }
-  [card-cvc] {
-    width: 6rem;
-    margin-bottom: 0;
-  }
-  [card-front],
-  [card-back] {
-    background: $bank-card-color;
-    /* Old browsers */
-    background: -moz-linear-gradient(
-      top,
-      $bank-card-color 0%,
-      $secondary-bc-color 100%
-    );
-    /* FF3.6+ */
-    background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      color-stop(0%, $bank-card-color),
-      color-stop(100%, $secondary-bc-color)
-    );
-    /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(
-      top,
-      $bank-card-color 0%,
-      $secondary-bc-color 100%
-    );
-    /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(
-      top,
-      $bank-card-color 0%,
-      $secondary-bc-color 100%
-    );
-    /* Opera 11.10+ */
-    background: -ms-linear-gradient(
-      top,
-      $bank-card-color 0%,
-      $secondary-bc-color 100%
-    );
-    /* IE10+ */
-    background: linear-gradient(
-      to bottom,
-      $bank-card-color 0%,
-      $secondary-bc-color 100%
-    );
-    /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0);
-    /* IE6-9 */
-    min-width: 320px;
+    padding-bottom: 2.5rem;
     max-width: 400px;
-    min-height: 230px;
-    border-radius: 0.6rem;
-    padding: 2rem 3rem 0;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    font-weight: 300;
-    color: white;
-    box-shadow: 1px 1px 0.2rem rgba(0, 0, 0, 0.2);
-  }
-  [card-front] {
-    z-index: 999;
-    margin-top: -25rem;
-    margin-left: -2rem;
-  }
-  [card-back] {
-    z-index: -2;
-    padding: 0rem;
-    padding-top: 2rem;
-    margin-right: -2rem;
-  }
-  [account-number] {
-    display: inline-block;
-    width: 80%;
-  }
-  [account-number-divider] {
-    display: inline-block;
-    text-align: center;
-    width: 10%;
-  }
-  [account-check-number] {
-    display: inline-block;
-    width: 10%;
-  }
-  [card-stripe] {
-    width: 100%;
-    height: 5.5rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    right: 0;
-  }
-  [card-token] {
-    display: none;
-  }
-  [cardholder-container] {
-    width: 75%;
-    display: inline-block;
-    [card-holder] {
-      width: 90%;
+    margin: auto;
+    * {
+        transition-property: all;
+        transition-duration: 0.3s;
     }
-  }
-  [bank-container] {
-    width: 100%;
-    display: inline-block;
+    [card-cvc] {
+        width: 6rem;
+        margin-bottom: 0;
+    }
+    [card-front],
+    [card-back] {
+        background: $bank-card-color;
+        /* Old browsers */
+        background: -moz-linear-gradient( top, $bank-card-color 0%, $secondary-bc-color 100%);
+        /* FF3.6+ */
+        background: -webkit-gradient( linear, left top, left bottom, color-stop(0%, $bank-card-color), color-stop(100%, $secondary-bc-color));
+        /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient( top, $bank-card-color 0%, $secondary-bc-color 100%);
+        /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient( top, $bank-card-color 0%, $secondary-bc-color 100%);
+        /* Opera 11.10+ */
+        background: -ms-linear-gradient( top, $bank-card-color 0%, $secondary-bc-color 100%);
+        /* IE10+ */
+        background: linear-gradient( to bottom, $bank-card-color 0%, $secondary-bc-color 100%);
+        /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0);
+        /* IE6-9 */
+        max-width: 400px;
+        min-height: 230px;
+        border-radius: 0.6rem;
+        padding: 2rem 3rem 0;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        font-weight: 300;
+        color: white;
+        box-shadow: 1px 1px 0.2rem rgba(0, 0, 0, 0.2);
+    }
+    [card-front] {
+        z-index: 999;
+        margin-top: -25rem;
+        margin-left: -2rem;
+    }
+    [card-back] {
+        z-index: -2;
+        padding: 0rem;
+        padding-top: 2rem;
+        margin-right: -2rem;
+    }
+    [account-number] {
+        display: inline-block;
+        width: 80%;
+    }
+    [account-number-divider] {
+        display: inline-block;
+        text-align: center;
+        width: 10%;
+    }
+    [account-check-number] {
+        display: inline-block;
+        width: 10%;
+    }
+    [card-stripe] {
+        width: 100%;
+        height: 5.5rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        right: 0;
+    }
+    [card-token] {
+        display: none;
+    }
+    [cardholder-container] {
+        width: 75%;
+        display: inline-block;
+        [card-holder] {
+            width: 90%;
+        }
+    }
+    [bank-container] {
+        width: 100%;
+        display: inline-block;
+        select {
+            width: 100%;
+        }
+    }
+    [agency-container] {
+        width: 25%;
+        display: inline-block;
+        [account-agency-number] {
+            text-align: center;
+            max-width: 55%;
+            margin-right: 5%;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+        [account-agency-divider] {
+            max-width: 2%;
+        }
+        [account-agency-check] {
+            margin-left: 5%;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            text-align: center;
+            max-width: 30%;
+        }
+    }
+    [card-button] {
+        border: 0.2rem solid white;
+        display: block;
+        padding: 1rem;
+        color: white;
+        float: right;
+        border-radius: 3rem;
+        background-color: $bank-card-color;
+    }
+    [next-button] {
+        margin-top: 2rem;
+    }
+    [save-button] {
+        border-radius: 50%;
+        font-weight: bold;
+        margin-top: -1rem;
+    }
+    input,
     select {
-      width: 100%;
+        border: none;
+        outline: none;
+        background-color: white;
+        font-weight: bold;
+        height: 3rem;
+        line-height: 3rem;
+        padding: 0 1rem;
+        margin: 0 0 0.8rem;
+        color: $bank-card-color;
+        font-size: 1rem;
+        box-sizing: border-box;
+        border-radius: 0.4rem;
+        letter-spacing: 0.07rem;
     }
-  }
-  [agency-container] {
-    width: 25%;
-    display: inline-block;
-    [account-agency-number] {
-      text-align: center;
-      max-width: 55%;
-      margin-right: 5%;
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
+    select {
+        padding: 0rem;
+        text-align: center;
+        option {
+            background-color: white;
+            font-weight: bold;
+            color: #444;
+        }
     }
-    [account-agency-divider] {
-      max-width: 2%;
+    input::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: lighten($secondary-bc-color, 20%);
     }
-    [account-agency-check] {
-      margin-left: 5%;
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
-      text-align: center;
-      max-width: 30%;
+    input::-moz-placeholder {
+        /* Firefox 19+ */
+        color: lighten($secondary-bc-color, 20%);
     }
-  }
-  [card-button] {
-    border: 0.2rem solid white;
-    display: block;
-    padding: 1rem;
-    color: white;
-    float: right;
-    border-radius: 3rem;
-    background-color: $bank-card-color;
-  }
-  [next-button] {
-    margin-top: 2rem;
-  }
-  [save-button] {
-    border-radius: 50%;
-    font-weight: bold;
-    margin-top: -1rem;
-  }
-  input,
-  select {
-    border: none;
-    outline: none;
-    background-color: white;
-    font-weight: bold;
-    height: 3rem;
-    line-height: 3rem;
-    padding: 0 1rem;
-    margin: 0 0 0.8rem;
-    color: $bank-card-color;
-    font-size: 1rem;
-    box-sizing: border-box;
-    border-radius: 0.4rem;
-    letter-spacing: 0.07rem;
-  }
-  select {
-    padding: 0rem;
-    text-align: center;
-    option {
-      background-color: white;
-      font-weight: bold;
-      color: #444;
+    input:-ms-input-placeholder {
+        /* IE 10+ */
+        color: lighten($secondary-bc-color, 20%);
     }
-  }
-  input::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
-    color: lighten($secondary-bc-color, 20%);
-  }
-  input::-moz-placeholder {
-    /* Firefox 19+ */
-    color: lighten($secondary-bc-color, 20%);
-  }
-  input:-ms-input-placeholder {
-    /* IE 10+ */
-    color: lighten($secondary-bc-color, 20%);
-  }
-  input:-moz-placeholder {
-    /* Firefox 18- */
-    color: lighten($secondary-bc-color, 20%);
-  }
-  label {
-    display: block;
-    margin: 0 auto 0.7rem;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
+    input:-moz-placeholder {
+        /* Firefox 18- */
+        color: lighten($secondary-bc-color, 20%);
+    }
+    label {
+        display: block;
+        margin: 0 auto 0.7rem;
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
 }
