@@ -1,6 +1,6 @@
 {
   "name": "ngx-bank-account-br",
-  "version": "1.0.0-rc25",
+  "version": "1.0.0-rc26",
   "description": "Address autocomplete directive for Angular.io (2+).",
   "main": "bundles/ngx-bank-account-br.umd.js",
   "repository": {
